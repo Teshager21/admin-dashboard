@@ -8,7 +8,7 @@ body{
     font-family: sans-serif;
     height:100vh;
     display: grid;
-    grid-template-columns: minmax(150px,1fr) minmax(250px,4fr) minmax(150px,1fr);
+    grid-template-columns: minmax(200px,1fr) minmax(250px,4fr) minmax(150px,1fr);
     grid-template-rows: minmax(50px,1fr) 5fr;
     gap:1rem;
     /* grid-template-areas: "aside header"
@@ -38,7 +38,7 @@ main{
 
 .projects-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap:1rem;
 }
 
@@ -49,6 +49,23 @@ main{
 
 .project span img{
     width: 1rem;
+}
+
+.avatar img{
+    border-radius: 50%;
+}
+
+.avatar-bigger img{
+    width:2rem;
+    border-radius: 50%;
+}
+
+.trending-card .avatar img {
+    width:1.5rem;
+}
+
+.announcements{
+    border:1px solid blueviolet;
 }
 
 .logo img{
