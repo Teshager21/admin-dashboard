@@ -2,8 +2,8 @@ body{
     /* background-color: tomato; */
     height:100vh;
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: minmax(150px,1fr) minmax(250px,4fr) minmax(150px,1fr);
+    grid-template-rows: minmax(50px,1fr) 5fr;
     /* grid-template-areas: "aside header"
     "aside main"; */
 }
