@@ -60,7 +60,7 @@ header{
 }
 
  .search-input{
-    background-color: #cdd3da;
+    background-color: #e2e8f0;
     padding-left: 1rem;
     border-radius:0.5rem;
     height: 1.5rem;
@@ -151,21 +151,36 @@ main{
  display: grid;
  grid-template-columns: 9fr 3fr;
  gap:1rem;
- background-color: #cdd3da;
+ background-color: #e2e8f0;
  padding-left: 1rem;
 }
 
 .projects-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     gap:1rem;
 }
 
 .project{
    border-radius: 0.5rem;
-    min-width:250px;
+    min-width:200px;
     background-color: #fff;
     padding: 0.5rem;
+    border-left:orange 4px solid;
+    display: grid;
+    gap: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.project-detail {
+    color:#9e9e9e;
+}
+
+.project-icons{
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+
 }
 
 .project span img{
