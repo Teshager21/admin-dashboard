@@ -9,8 +9,8 @@ body{
     /* height:100vh; */
     display: grid;
     grid-template-columns: minmax(200px,1fr) minmax(250px,4fr) minmax(150px,1fr);
-    grid-template-rows: minmax(50px,1fr) 5fr;
-    gap:1rem;
+    grid-template-rows: minmax(105px,1fr) 5fr;
+    /* gap:1rem; */
     /* grid-template-areas: "aside header"
     "aside main"; */
 }
@@ -20,36 +20,69 @@ header{
     display: grid;
     grid-template-rows: 15px 1fr;
     grid-template-columns:1fr;
+    padding: 1rem;
+    padding-right: 1rem;
 }
 .top-header{
     grid-row: 1;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
     /* grid-template-rows: 255px 1fr; */
 }
 .more{
     grid-column: 2/3;
-    border: #1992d4 1px solid;
+    /* border: #1992d4 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(3,fr);
+    /* background-color: tomato; */
+    justify-content: end;
+    align-items:center;
+    gap: 1rem;
+}
+.notification-bell{
+    grid-column: 1/2;
+}
+.more .avatar{
+    grid-column: 2/3;
+}
+.user-name{
+    grid-column: 3/4;
 }
 .search{
     grid-column: 1/2;
-    border: #1992d4 1px solid;
+    /* border: #1992d4 1px solid; */
+    display: grid;
+    grid-template-columns: 1.5rem 1fr 4rem;
+    align-items: center;
+    align-content: center;
+    gap: 0.5rem;
+}
+
+ .search-input{
+    background-color: #cdd3da;
+    padding-left: 1rem;
+    border-radius:0.5rem;
+    height: 1.5rem;
+    border:none;
 }
 
 .bottom-header{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 3fr 2fr;
     grid-row: 2;
     grid-column: 1/-1;
+    align-items: center;
 }
 
 .current-user{
     display: grid;
     grid-template-columns: 4rem 1fr;
     grid-template-rows: repeat(2,1fr);
-    gap:0.2rem;
-    border: purple 1px  solid;
+    /* gap:0.2rem; */
+    align-items: center;
+
 
 }
 
@@ -59,7 +92,7 @@ header{
 }
 
 .avatar-bigger{
-    width:4rem;
+    width:3.5rem;
     grid-row: 1/-1;
 }
 .avatar-bigger img{
@@ -87,6 +120,11 @@ header{
     padding-bottom: 0.5rem;
     padding-right: 1rem;
     padding-left: 1rem;
+    border:none;
+    background-color: #1992d4;
+    color:white;
+    border-radius: 1rem;
+    border-width: 100%;
 }
 
 .new-btn{
@@ -113,7 +151,9 @@ main{
  display: grid;
  grid-template-columns: 9fr 3fr;
  gap:1rem;
-} 
+ background-color: #cdd3da;
+ padding-left: 1rem;
+}
 
 .projects-grid{
     display: grid;
@@ -122,8 +162,10 @@ main{
 }
 
 .project{
-    border:1px solid tomato;
+   border-radius: 0.5rem;
     min-width:250px;
+    background-color: #fff;
+    padding: 0.5rem;
 }
 
 .project span img{
@@ -152,10 +194,6 @@ main{
 
 header {
     background-color: #fff;
-}
-
-main{
-    /* background-color:orange; */
 }
 
 .aside {
