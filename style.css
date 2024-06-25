@@ -1,9 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     /* background-color: tomato; */
+    font-family: sans-serif;
     height:100vh;
     display: grid;
     grid-template-columns: minmax(150px,1fr) minmax(250px,4fr) minmax(150px,1fr);
     grid-template-rows: minmax(50px,1fr) 5fr;
+    gap:1rem;
     /* grid-template-areas: "aside header"
     "aside main"; */
 }
@@ -12,8 +19,12 @@ header{
     grid-row:1/span1;
 }
 
+header span img{
+    width: 1.5rem;
+}
+
 aside{
-    grid-column:1/span1;
+    grid-column:1;
     grid-row:1/-1;
 }
 
@@ -34,4 +45,42 @@ main{
 .project{
     border:1px solid tomato;
     min-width:250px;
+}
+
+.project span img{
+    width: 1rem;
+}
+
+.logo img{
+    width:1.5rem;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    }
+    
+
+}
+
+header {
+    background-color: #fff;
+}
+
+main{
+    /* background-color:orange; */
+}
+
+.aside {
+    background-color: #1992d4;
+    border:1px solid green;
+}
+aside{
+    color:#fff;
+}
+aside img{
+    width: 1.5rem;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+nav ul li{
+    display: flex;
+    gap:0.2rem;
+    align-items: center;
 }
