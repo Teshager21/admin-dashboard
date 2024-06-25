@@ -10,7 +10,6 @@ body{
 header{
     grid-column: 2/-1;
     grid-row:1/span1;
-    /* grid-row: */
 }
 
 aside{
@@ -22,5 +21,17 @@ main{
  grid-column:2/-1;
  grid-row:2/-1;
  display: grid;
- grid-template-columns: 8fr 3fr;
+ grid-template-columns: 9fr 3fr;
+ gap:1rem;
 } 
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:1rem;
+}
+
+.project{
+    border:1px solid tomato;
+    min-width:250px;
+}
