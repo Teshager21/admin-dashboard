@@ -202,9 +202,9 @@ main{
     border-radius: 0.5rem;
     display: grid;
     gap: 1rem;
-    box-shadow: (100,100,100,0.2)  0 2px 8px 0;
+    box-shadow: rgba(100,100,100,0.2)  0 2px 8px 0;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
-
 .trending-card{
     display: grid;
     grid-template-columns: 2.5rem 1fr;
@@ -272,7 +272,7 @@ main{
 }
 
 .logo img{
-    width:1.5rem;
+    width:2rem;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
     }
     
@@ -285,7 +285,21 @@ header {
 
 .aside {
     background-color: #1992d4;
-    border:1px solid green;
+    display: grid;
+    grid-template-rows: 50px 1fr;;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.aside .logo{
+ display: grid;
+ grid-template-columns: 2rem 1fr;
+ align-items: center;
+ align-content: center;
+}
+.aside nav{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
 }
 aside{
     color:#fff;
@@ -296,7 +310,12 @@ aside img{
 }
 
 nav ul li{
-    display: flex;
-    gap:0.2rem;
+    /* display: flex;
+    gap:0.8rem;
     align-items: center;
+    justify-content:start; */
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    align-items: center;
+    gap: 0.8rem;
 }
